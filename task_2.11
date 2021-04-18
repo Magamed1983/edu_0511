@@ -1,0 +1,17 @@
+/*
+Задание: Дан массив с числами. Узнайте сколько элементов с начала массива надо сложить, чтобы в сумме получилось больше 10-ти.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {0, 1, 2, 5, 3, 2, 0, 4, 6, 7, 10, 20};
+        int sum = 0;
+        int arr_elements = 0;
+        for (int j : arr) {
+            sum = sum + j;
+            arr_elements++;
+            if (sum > 10) break;
+        }
+        System.out.println(arr_elements);
+    }
+}
