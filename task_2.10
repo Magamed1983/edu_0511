@@ -1,0 +1,16 @@
+/*
+Задание: Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд.
+Если есть - выведите 'да', а если нет - выведите 'нет'.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = {0, 1, 2, 3, 4, 5, 5, 6};
+        int k = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] == arr[i - 1]) k++;
+        }
+        if (k>0) System.out.println("да");
+        else System.out.println("нет");
+    }
+}
